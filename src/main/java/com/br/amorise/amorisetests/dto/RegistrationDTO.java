@@ -27,7 +27,7 @@ public class RegistrationDTO {
     @NotNull(message = "UserType is required!")
     private UserType userType;
 
-    @PastOrPresent(message = "WeddingDate must be on the future")
+    @Future(message = "WeddingDate must be on the future")
     private LocalDate weddingDate;
 
     @Size(message = "Partner name too long")
